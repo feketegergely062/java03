@@ -2,14 +2,16 @@ public class Rhombus {
 
     public Rhombus() {
     }
+        public double calcRadius(double side, double alpha){
+            double rad = alpha * Math.PI/180;
+            double radius = 1/2.*side *Math.sin(rad);
+            return radius;
     
-    public static double calcRadius(double side, double alpha){
-        double rad = alpha * Math.PI/180;
-        double radius = 1/2.*side *Math.sin(alpha);
-        return radius;
+        }
+        
+    
+    
 
-    }
+    
+    
 }
-
-    
-
